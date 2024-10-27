@@ -177,9 +177,9 @@ section {
   transition: 800ms;
   cursor: pointer;
 }
-.carr div img:hover {
+/* .carr div img:hover {
   transform: scale(1.1,1.1)
-}
+} */
 footer {
   min-height: 40px;
   background-color: #333;
@@ -188,13 +188,56 @@ footer {
   color: #fff;
   padding: 12px 10%;
 }
-footer a div {
-  text-align: center;
-}
+
 footer a {
+  text-align: center;
+  font-size: .7em;
   color: white;
   text-decoration: none;
+  padding: 3px;
+  border-radius: 3px;
+  transition: 100ms;
+}
+footer a:hover{
+  text-decoration: underline;
+  background-color: #0002;
 }
 h1 {
   margin-bottom: 14px;
+}
+.section .nav-buttons{
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  position: relative;
+}
+.nav-buttons::before{
+  content: "Atividades:";
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  font-size: .6em;
+  color: #ddd;
+}
+.section .nav-buttons a{
+  margin: 0 4px;
+  text-align: center;
+  /* background-color: blue; */
+  width: 30%;
+}
+.section .nav-buttons a button{
+  margin: 0;
+  /* background-color: green; */
+  max-width: 100%;
+}
+article{
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+  font-size: .8em;
 }
