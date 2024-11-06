@@ -208,13 +208,14 @@ h1 {
 .section .nav-buttons{
   margin-top: 28px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* background-color: red; */
   width: 100%;
   justify-content: center;
-  align-items: center;
-  gap: 3%;
+  align-items: left;
+  gap: 3%; 
   position: relative;
+  flex-wrap: wrap;
 }
 .nav-buttons::before{
   content: "Atividades:";
